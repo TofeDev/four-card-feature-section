@@ -1,0 +1,139 @@
+:root {
+    /*Colorfull*/
+    --red: hsl(0, 78%, 62%);
+    --Cyan: hsl(180, 62%, 55%);
+    --Orange: hsl(34, 97%, 64%);
+    --Blue: hsl(212, 86%, 64%);
+    /*Background*/
+    --Very-Dark-Blue: hsl(234, 12%, 34%);
+    --Grayish-Blue: hsl(229, 6%, 66%);
+    --Very-Light-Gray: hsl(0, 0%, 98%);
+
+    /*Fonts Weight*/
+    --extralight: 200;
+    --regular: 400;
+    --semibold: 600;
+}
+
+* {
+    scrollbar-width: none;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: var(--Very-Light-Gray);
+    margin: 0;
+}
+
+header {
+    text-align: center;
+    margin-block: 4em;
+}
+
+#title {
+    margin: 0;
+}
+
+.light {
+    font-weight: var(--extralight);
+}
+
+.regular {
+    font-weight: var(--regular);
+}
+
+.bold {
+    font-weight: var(--semibold);
+}
+
+.containter {
+    margin-inline: auto;
+    max-width: 450px;
+}
+
+#subtitle {
+    padding: 0 30%;
+}
+
+.container--big {
+    max-width: 1440px;
+}
+
+.grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2%;
+}
+
+#card {
+    --_linecolor: var(--linecolor, aqua);
+    max-width: 420px;
+    background-color: white;
+    border-radius: 6px 6px 15px 15px;
+    padding-bottom: 2%;
+    margin: 5%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.178);
+}
+
+#img {
+    display: block;
+    margin-left: auto;
+    padding: 5%;
+    margin-left: 70%;
+}
+
+#name, #description {
+    padding: 0 30px;
+}
+
+h2, h3 {
+    color: var(--Very-Dark-Blue);
+}
+
+p {
+    color: var(--Grayish-Blue);
+}
+
+.color {
+    width: 100%;
+    height: 5px;
+    background-color: var(--_linecolor);
+    border-radius: 15px 15px 0 0;
+}
+
+.cyan {
+    --linecolor: var(--Cyan)
+}
+
+.blue {
+    --linecolor: var(--Blue)
+}
+
+.red {
+    --linecolor: var(--red)
+}
+
+.yellow {
+    --linecolor: var(--Orange)
+}
+
+@media (375px < width <=768px) {
+#img {
+    margin-left: 55%;
+}
+
+#subtitle {
+    padding: 0 20%;
+}
+}
+
+@media (width <= 375px) {
+.grid {
+    display: block;
+}
+
+#subtitle {
+    padding: 0 8%;
+}
+}
